@@ -1,16 +1,16 @@
 const categories = document.querySelector("#categories");
 const number = categories.querySelectorAll(".item");
-const numbe = `Number of categories: ${number.length}`;
-console.log(numbe);
+const numberOfCategories = `Number of categories: ${number.length}`;
+console.log(numberOfCategories);
 
-const categ = categories.querySelectorAll(".item");
+const nodeListItem = categories.querySelectorAll(".item");
 
-categ.forEach(function callbackfn(items) {
-  const amos = items.querySelector("h2");
-  const array = `Category: ${amos.textContent}`;
-  console.log(array);
+nodeListItem.forEach(function callbackfn(items) {
+  const categoryItem = items.querySelector("h2");
+  const categoryName = `Category: ${categoryItem.textContent}`;
+  console.log(categoryName);
 
-  const amount = items.querySelectorAll("li");
-  const number = `Elements: ${amount.length}`;
-  console.log(number);
+  const tlemtnts = items.querySelectorAll("li");
+  const categoriesElements = `Elements: ${tlemtnts.length}`;
+  console.log(categoriesElements);
 });

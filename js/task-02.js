@@ -11,6 +11,7 @@ const listOfIngredients = [];
 
 ingredients.forEach(function callbackfn(item) {
   const itemOfIngredients = document.createElement("li");
+
   itemOfIngredients.className = "item";
   itemOfIngredients.textContent = item;
   listOfIngredients.push(itemOfIngredients);
