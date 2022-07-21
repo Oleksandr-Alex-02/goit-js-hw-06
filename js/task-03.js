@@ -19,7 +19,7 @@ console.log(ulnew);
 const rrr = images
   .map(
     (image) =>
-      `<li> <img width='300px' src='${image.url}' alt='${image.alt}'> </li>`
+      `<li> <img width='300px' src='${image.url}' alt='${image.alt}'></li>`
   )
   .join("");
 console.log(rrr);
