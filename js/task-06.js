@@ -16,7 +16,7 @@ const lengthInput = onInput.getAttribute('data-length');
 onInput.addEventListener('blur', () => {
   if (onInput.value.length < onInput.getAttribute('data-length')) {
     onInput.classList.add('invalid');
-    // return;
+    return;
   }
   onInput.classList.remove('invalid');
   onInput.classList.add('valid');
